@@ -39,7 +39,7 @@ else
 
     SUBGRAPH_ID=$(grep "Build completed:" deploy-output.txt | grep -oE "Qm[a-zA-Z0-9]{44}")
     rm deploy-output.txt
-    echo "The Graph deployment complete: ${SUBGRAPH_ID}"
+    echo "The Graph deployment completfe: ${SUBGRAPH_ID}"
 
     if [[ -z "$SUBGRAPH_ID" ]]; then
       echo "Could not find subgraph ID in deploy output, cannot deploy to Aragon infra."
